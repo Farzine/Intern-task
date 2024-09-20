@@ -1,5 +1,4 @@
 import CardExample from "@/components/cardExample";
-import Image from "next/image";
 import React from "react";
 import PhotoComponent from "@/components/signUp";
 import ColorBoxContainer from "@/components/colorBoxGrid";
