@@ -22,8 +22,8 @@ const ProfileCard: FC<ProfileCardProps> = ({ name, title, profilePic }) => (
         </div>
         <div className="absolute bottom-6 bg-gradient-to-r from-slate-500 to-slate-600 rounded-lg h-fit w-fit">
             <div className='px-3'>
-                <p className="text-md font-semibold text-gray-300">{name}</p>
-                <p className="text-gray-400 text-sm">{title}</p>
+                <p className="text-md font-semibold text-white">{name}</p>
+                <p className="text-gray-300 text-sm">{title}</p>
             </div>
         </div>
     </div>

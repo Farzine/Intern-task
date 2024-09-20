@@ -31,7 +31,7 @@ const ColorChangingComponent = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center py-24 px-6 lg:px-10 space-y-10 lg:space-y-0">
       {/* Left Side: Color Boxes */}
-      <div className="flex flex-wrap items-center lg:w-1/2 ml-24 md:ml-20 w-full">
+      <div className="flex flex-wrap items-center lg:w-1/2 ml-14 md:ml-20 w-full">
         {/* Large Color Box */}
         <div
           className={`w-56 h-56 md:w-72 md:h-72 rounded-2xl ${selectedColor} transition-colors duration-500`}

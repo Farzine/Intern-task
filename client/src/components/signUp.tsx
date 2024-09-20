@@ -3,11 +3,11 @@ import React from 'react';
 
 const PhotoComponent: React.FC = () => {
   return (
-    <div className="flex flex-wrap lg:flex-nowrap items-center justify-between w-full px-2 lg:px-16 py-24">
+    <div className="flex flex-wrap lg:flex-nowrap items-center justify-between w-full px-2 lg:px-16 mt-20">
       {/* Left Section with Photos */}
       <div className="relative flex flex-col space-y-14 md:ml-16 w-full lg:w-auto">
         {/* Photo 1 */}
-        <div className="relative bg-gradient-to-r from-blue-500 to-purple-600 md:w-60 w-44 h-44 md:h-60 rounded-3xl flex justify-center items-center text-white text-xl font-semibold md:ml-0 ml-3">
+        <div className="relative bg-gradient-to-r from-blue-500 to-purple-600 md:w-60 w-40 h-40 md:h-60 rounded-3xl flex justify-center items-center text-white text-xl font-semibold md:ml-0 ml-3">
           Photo 1
           <div className="absolute md:bottom-[-20px] md:right-[-20px] bottom-[-15px] right-[-15px]">
             <Image
@@ -21,7 +21,7 @@ const PhotoComponent: React.FC = () => {
         </div>
 
         {/* Photo 3 */}
-        <div className="relative bg-gradient-to-tl from-red-600 to-red-400 md:w-40 w-32 h-32 md:h-40 rounded-3xl flex justify-center items-center text-white text-xl font-semibold ml-[55px] md:ml-[75px]">
+        <div className="relative bg-gradient-to-tl from-red-600 to-red-400 md:w-40 w-28 h-28 md:translate-y-0 translate-y-[-16px] md:h-40 rounded-3xl flex justify-center items-center text-white text-xl font-semibold ml-[55px] md:ml-[75px]">
           Photo 3
           <div className="absolute md:bottom-[-20px] md:right-[-20px] bottom-[-15px] right-[-15px]">
             <Image
@@ -37,7 +37,7 @@ const PhotoComponent: React.FC = () => {
 
       {/* Photo 2 with Background Image */}
       <div
-        className="absolute md:relative md:w-48 w-36 h-36 md:h-48 rounded-3xl flex justify-center items-center text-black text-xl font-semibold mx-12 md:ml-10 ml-52 md:mb-0 mb-96"
+        className="absolute md:relative md:w-48 w-32 h-32 md:h-48 rounded-3xl flex justify-center items-center text-black text-xl font-semibold mx-12 md:ml-10 ml-52 md:mb-0 mb-96"
         style={{
           backgroundImage: `url('https://res.cloudinary.com/dsd4b2lkg/image/upload/v1726798040/459255185_1193629701754424_7864280097299550147_n_wiik0w.png')`,
           backgroundSize: 'cover',
