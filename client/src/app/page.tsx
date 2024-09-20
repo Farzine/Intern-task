@@ -5,7 +5,6 @@ import ColorBoxContainer from "@/components/colorBoxGrid";
 import ResponsiveComponent from "@/components/explorNow";
 import ColorChangingComponent from "@/components/collectionFeatured";
 import Navbar from "@/components/navBar";
-import OverviewComponent from "@/components/overViewComponent";
 import { FaFilter } from "react-icons/fa";
 
 export default function Home() {
