@@ -5,6 +5,7 @@ import ColorBoxContainer from "@/components/colorBoxGrid";
 import ResponsiveComponent from "@/components/explorNow";
 import ColorChangingComponent from "@/components/collectionFeatured";
 import Navbar from "@/components/navBar";
+import OverviewComponent from "@/components/overViewComponent";
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
       </div>
       <div className="flex items-center justify-center">
         <ColorChangingComponent/>
+      </div>
+      <div>
+        <OverviewComponent/>
       </div>
     </div>
   );

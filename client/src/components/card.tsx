@@ -3,29 +3,45 @@ import React from 'react';
 interface CardProps {
   title: string;
   price: string;
-  currentSlide: number;
-  totalSlides: number;
+  currentSlide: string;
+  totalSlides: string;
   avatars: string[];
+  bgColor: string; 
+  buttonColor1: string; 
+  buttonColor2: string; 
+  buttonTesxtColorOne: string;
+  buttonTesxtColorTwo: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, price, currentSlide, totalSlides, avatars }) => {
+const Card: React.FC<CardProps> = ({ 
+  title, 
+  price, 
+  currentSlide, 
+  totalSlides, 
+  avatars,
+  bgColor,
+  buttonColor1,
+  buttonColor2,
+  buttonTesxtColorOne,
+  buttonTesxtColorTwo
+}) => {
   return (
-    <div className="max-w-sm w-full p-4 bg-white shadow-lg rounded-lg flex flex-col space-y-4">
+    <div className="max-w-sm w-full p-4 bg-white shadow-2xl rounded-3xl flex flex-col space-y-4 md:mb-0 mb-8">
       {/* Image/Content placeholder */}
-      <div className="bg-gradient-to-r from-purple-200 to-purple-300 rounded-lg h-48"></div>
-      
+      <div className={`${bgColor} rounded-lg h-48`}></div>
+
       {/* Avatars */}
       <div className="flex items-center -space-x-2">
         {avatars.map((avatar, index) => (
-          <img 
-            key={index} 
-            src={avatar} 
-            alt={`Avatar ${index}`} 
-            className="w-8 h-8 border-2 border-white rounded-full" 
+          <img
+            key={index}
+            src={avatar}
+            alt={`Avatar ${index}`}
+            className="w-8 h-8 border-2 border-white rounded-full"
           />
         ))}
       </div>
-      
+
       {/* Title and Price */}
       <div className="flex justify-between items-center">
         <div>
@@ -39,11 +55,11 @@ const Card: React.FC<CardProps> = ({ title, price, currentSlide, totalSlides, av
 
       {/* Buttons */}
       <div className="flex justify-between">
-        <button className="px-4 py-2 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-full text-sm shadow focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 transition">
-          DSVBD
+        <button className={`px-4 py-2 ${buttonColor1} ${buttonTesxtColorOne} rounded-full text-sm shadow focus:outline-none focus:ring-2 focus:ring-opacity-50 transition`}>
+          Button 1
         </button>
-        <button className="px-4 py-2 bg-gradient-to-r from-teal-600 to-teal-400 text-white rounded-full text-sm shadow hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:ring-opacity-50 transition">
-          DSVBD
+        <button className={`px-4 py-2 ${buttonColor2}  ${buttonTesxtColorTwo} rounded-full text-sm shadow hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-opacity-50 transition`}>
+          Button 2
         </button>
       </div>
     </div>
